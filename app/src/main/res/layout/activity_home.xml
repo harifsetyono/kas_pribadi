@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/graylight"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:background="@drawable/gradientbackground"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_marginTop="0dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginStart="10dp"
+                                android:text="Total Pemasukan "
+                                android:textColor="#2C60AA"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/totPemasukan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginEnd="10dp"
+                                android:text="Rp. 1000009999999"
+                                android:textColor="#4C76B3"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginStart="10dp"
+                                android:text="Total Pengeluaran "
+                                android:textColor="#EF485B"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/totPengeluaran"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginEnd="10dp"
+                                android:text="Rp. 1000009999999"
+                                android:textColor="#EF485B"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginStart="10dp"
+                                android:text="Saldo Akhir"
+                                android:textColor="#4f4c4c"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/totSaldo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentTop="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginEnd="10dp"
+                                android:text="Rp. 1000009999999"
+                                android:textColor="#4f4c4c"
+                                android:textSize="14sp"
+                                android:textStyle="bold" />
+                        </RelativeLayout>
+
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- Row 1 -->
+                <!-- Column 1 -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btnpemasukan"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:src="@drawable/pemasukan"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:text="Pemasukan"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Column 2 -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btnpengeluaran"
+                    android:layout_weight="1"
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+
+                            android:src="@drawable/pengeluaran"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:text="Pengeluaran"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Row 2 -->
+                <!-- Column 1 -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btnlaporan"
+                    android:layout_weight="1"
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+
+                            android:src="@drawable/laporan"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:text="Laporan Periodik"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Column 2 -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/btnpengaturan"
+                    android:layout_weight="1"
+                    android:layout_width="125dp"
+                    android:layout_height="150dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="8dp">
+
+                    <LinearLayout
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="16dp"
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+
+                            android:src="@drawable/setting"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center_horizontal"/>
+
+                        <TextView
+                            android:text="Pengaturan Kategori"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

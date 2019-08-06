@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Kas Pribadiku</string>
+    <string-array name="country_names">
+        <item>Indonesia</item>
+        <item>Malaysia</item>
+        <item>Singapura</item>
+        <item>Brunei</item>
+        <item>India</item>
+    </string-array>
+</resources>
